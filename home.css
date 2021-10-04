@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Heebo:wght@100;400&display=swap');
+
+nav {
+    font-family: 'Heebo', sans-serif;
+}
+
+#mascote--sobre {
+    left: 0;
+}
+
+nav .nav-link {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+
+#botao--login, #botao--entrar {
+    font-size: 25px;
+    border-radius: 7px;
+    font-family: 'Cairo', sans-serif;
+}
+
+.rodape {
+    margin-top: 30px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.2rem;
+}
+
+#link--contato {
+    padding: 5px;
+    font-weight: bold;
+}
