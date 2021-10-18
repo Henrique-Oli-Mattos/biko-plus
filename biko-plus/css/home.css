@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Heebo:wght@100;400&display=swap');
+
+body {
+    display: block;
+    overflow-x: hidden;
+}
+
+nav {
+    background-color: #ececec;
+    font-family: 'Amatic SC', cursive;
+    color: #000;
+}
+
+.navbar-brand img {
+    max-height: 120px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #142d4c;
+}
+
+nav ul li a {
+    color: #000;
+    font-size: 24px;
+    margin: auto 10px;
+}
+
+nav ul li a:hover {
+    color: #142d4c;
+}
+
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #9fd3c7;
+}
+
+section h1 {
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #142d4c;
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 60px;
+    font-family: 'Amatic SC', cursive;
+}
+
+section p {
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+button {
+    max-width: 50%;
+    border-radius: 50px !important;
+    font-family: 'Amatic SC', cursive;
+    color: #ececec;
+    opacity: 0.9;
+    transition: all ease 0.5s;
+    transform: scale(0.9);
+}
+
+button:hover {
+    opacity: 1;
+    transform: scale(1.0);
+}
+
+#biko .col {
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+
+#biko .img-col {
+    justify-content: flex-end;
+    margin-top: 100px;
+}
+
+#biko img {
+    max-width: 130% !important;
+    width: 130%;
+}
+
+#bikoDois h2 {
+    font-size: 50px;
+    font-family: 'Amatic SC', cursive;
+    color: #142d4c;
+    margin-bottom: 40px;
+}
+
+#bikoDois .card {
+    box-shadow: 11px 7px 16px #ececec;
+    border: 0;
+    text-align: center;
+}
+
+#bikoDois .card-title {
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    color: #142d4c;
+}
+
+#bikoDois .card-text {
+    font-size: 20px;
+}
+
+#bikoDois .icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+#resumoSobreNos {
+    background-color: #ececec;
+}
+
+#resumoSobreNos h2 {
+    font-size: 50px;
+    font-family: 'Amatic SC', cursive;
+    color: #142d4c;
+    margin-top: 55px;
+    margin-bottom: 40px;
+}
+
+#resumoSobreNos p {
+    font-family: 'Amatic SC', cursive;
+    color: #000;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+#resumoSobreNos img {
+    box-shadow: 11px 7px 16px #142d4c;
+    margin-bottom: 40px;
+}
+
+.rodape {
+    background-color: #ececec;
+    margin: 2px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.5rem;
+}
+
+#link--contato {
+    padding: 5px;
+    font-weight: bold;
+}
+
+#backgroungHeaderModal{
+        background:#9fd3c7;
+        color:cornsilk;
+        font-family: 'Amatic SC', cursive;
+    }
+    
+#btnSalvar{
+        font-family: 'Amatic SC', cursive;
+        background: #41b53a;
+    }
