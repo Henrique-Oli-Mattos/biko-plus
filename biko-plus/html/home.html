@@ -71,12 +71,14 @@
                 </ul>
 
                 <!--Botão chama Modal com target "#addUsuario"-->
-                        <button type="button" class="btn btn-secondary rounded-pill" style="background-color: orange; width: 150px; font-size: 30px;" id="botao--login" data-bs-toggle="modal" data-bs-target="#addUsuario">
-                            Cadastrar
-                        </button>
+                <button type="button" class="btn btn-secondary rounded-pill"
+                    style="background-color: orange; width: 150px; font-size: 30px;" id="botao--login"
+                    data-bs-toggle="modal" data-bs-target="#addUsuario">
+                    Cadastrar
+                </button>
 
-                    <button type="button" class="btn btn-primary rounded-pill"
-                        style="width: 120px; background-color: transparent; color: #000; margin-left: 5px; font-size: 30px;">Entrar</button>
+                <button type="button" class="btn btn-primary rounded-pill"
+                    style="width: 120px; background-color: transparent; color: #000; margin-left: 5px; font-size: 30px;">Entrar</button>
                 </form>
             </div>
         </div>
@@ -170,21 +172,21 @@
     </section>
 
     <!--Modal de Cadastro-->
-
-     <div class="modal fade" id="addUsuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="addUsuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header" id="backgroungHeaderModal">
 
                     <a href="index.html"><img src="../assets/biko-logo-fundo-transparente.png" alt="Logo da Biko"
-                        width="150" height="100"></a>
-                        
+                            width="150" height="100"></a>
+
                     <h5 class="modal-title" id="exampleModalLabel">Cadastre-se já</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
 
-                    <form id="frmUsuario" action="https://61689c1009e030001712c06c.mockapi.io/api/v1//CadastroBIKO" method="POST">
+                    <form id="frmUsuario" action="https://61689c1009e030001712c06c.mockapi.io/api/v1//CadastroBIKO"
+                        method="POST">
                         <div class="mb-3">
                             <label for="nome" class="form-label">Nome completo</label>
                             <input type="text" class="form-control" id="nome" name="nome" required>
@@ -196,7 +198,7 @@
                         </div>
 
                         <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
+                            <label for="email" class="form-label">E-mail</label>
                             <input type="email" class="form-control" id="email" name="email" required>
                         </div>
 
@@ -207,11 +209,11 @@
 
                         <div class="mb-3">
                             <input type="checkbox" id="termoUso" name="termoUso" required>
-                            <label for="check1" class="form-label">Concordo com os termos de uso BIKO+</label>                           
+                            <label for="check1" class="form-label">Concordo com os termos de uso <a href="#" style="color: #142d4c;">BIKO+</a></label>
                         </div>
 
                         <div class="mb-3">
-                            <button id="btnSalvar" type="submit" class="btn btn-primary" >Cadastrar</button>
+                            <button id="btnSalvar" type="submit" class="btn btn-primary">Cadastrar</button>
                         </div>
                     </form>
                 </div>
