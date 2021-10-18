@@ -69,11 +69,16 @@
                         <a class="nav-link" href="#">Contato</a>
                     </li>
                 </ul>
-                <form class="d-flex" id="botoes">
-                    <button type="button" class="btn btn-secondary rounded-pill"
-                        style="background-color: orange; width: 150px; font-size: 30px;">Cadastrar</button>
-                    <button type="button" class="btn btn-primary rounded-pill"
-                        style="width: 120px; background-color: transparent; color: #000; margin-left: 5px; font-size: 30px;">Entrar</button>
+
+                <!--Botão chama Modal com target "#addUsuario"-->
+                <button type="button" class="btn btn-secondary rounded-pill"
+                    style="background-color: orange; width: 150px; font-size: 30px;" id="botao--login"
+                    data-bs-toggle="modal" data-bs-target="#addUsuario">
+                    Cadastrar
+                </button>
+
+                <button type="button" class="btn btn-primary rounded-pill"
+                    style="width: 120px; background-color: transparent; color: #000; margin-left: 5px; font-size: 30px;">Entrar</button>
                 </form>
             </div>
         </div>
@@ -89,10 +94,13 @@
                     <p>Oferecendo serviços de excelência e
                         empregando profissionais!</p>
 
+                        <!--CHAMA MODAL DE AUTONOMO-->
+
                     <div class="d-inline-block">
                         <button type="button" class="btn btn-dark btn-lg"
-                            style="color: #ececec; font-family: 'Amatic SC', cursive;">Seja um profissional!</button>
+                            style="color: #ececec; font-family: 'Amatic SC', cursive;" id="botao--cadAU" data-bs-toggle="modal" data-bs-target="#addUsuarioAU">Seja um profissional!</button>
 
+                        <!--CHAMA MODAL DE LOGIN-->
                         <button type="button" class="btn btn-dark btn-lg"
                             style="color: #ececec; font-family: 'Amatic SC', cursive; background-color: #142d4c;">Veja
                             os serviços!</button>
@@ -110,7 +118,8 @@
             <div class="row">
                 <div class="col text-center">
                     <h2>Um pouco sobre nós!</h2>
-                    <p>Somos um grupo de estudantes do Centro Universitário Facens e ao ficarmos inquietos com a
+                    <p>
+                        Somos um grupo de estudantes do Centro Universitário Facens e ao ficarmos inquietos com a
                         situação dos empregos
                         durante a pandemia, tivemos a ideia do Biko. Nosso objetivo é dar oportunidade a
                         trabalhadores autônomos, principalmente ao
@@ -165,6 +174,140 @@
             </div>
         </div>
     </section>
+
+    <!--Modal de Cadastro-->
+    <div class="modal fade" id="addUsuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" id="backgroungHeaderModal">
+
+                    <a href="index.html"><img src="../assets/biko-logo-fundo-transparente.png" alt="Logo da Biko"
+                            width="150" height="100"></a>
+
+                    <h5 class="modal-title" id="exampleModalLabel">Cadastre-se já</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form id="frmUsuario" action="https://61689c1009e030001712c06c.mockapi.io/api/v1//CadastroBIKO"
+                        method="POST">
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome completo</label>
+                            <input type="text" class="form-control" id="nome" name="nome" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Data de Nascimento</label>
+                            <input type="date" class="form-control" id="data" name="data" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="senha" class="form-label">Senha</label>
+                            <input type="password" class="form-control" id="senha" name="senha" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="checkbox" id="termoUso" name="termoUso" required>
+                            <label for="check1" class="form-label">Concordo com os termos de uso <a href="lorem.html" style="color: #142d4c;">BIKO+</a></label>
+                        </div>
+
+                        <div class="mb-3">
+                            <button id="btnSalvar" type="submit" class="btn btn-primary">Cadastrar</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Fim do Modal-->
+
+    <!--Modal para cadastro de autonomo-->
+
+    <div class="modal fade" id="addUsuarioAU" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" id="backgroungHeaderModal">
+
+                    <a href="index.html"><img src="../assets/biko-logo-fundo-transparente.png" alt="Logo da Biko"
+                            width="150" height="100"></a>
+
+                    <h5 class="modal-title" id="exampleModalLabel">Faça parte da BIKO+</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form id="frmUsuarioAU">
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome completo</label>
+                            <input type="text" class="form-control" id="nome" name="nome" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Data de Nascimento</label>
+                            <input type="date" class="form-control" id="data" name="data" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="senha" class="form-label">Senha</label>
+                            <input type="password" class="form-control" id="senha" name="senha" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="profissao" class="form-label">Profissão</label>
+                            <input type="text" class="form-control" id="profissao" name="profissao" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="tempoexp" class="form-label">Tempo de Experiência</label>
+                            <input type="text" class="form-control" id="tempoexp" name="tempoexp" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="telefone" class="form-label">Telefone</label>
+                            <input type="text" class="form-control" id="telefone" name="telefone" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="cpf" class="form-label">CPF</label>
+                            <input type="text" class="form-control" id="cpf" name="cpf" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="curso" class="form-label">Curso Profissionalizante</label>
+                            <input type="text" class="form-control" id="curso" name="curso">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="instituição" class="form-label">Instituição</label>
+                            <input type="text" class="form-control" id="instituição" name="instituição">
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="checkbox" id="termoUso" name="termoUso" required>
+                            <label for="check1" class="form-label">Concordo com os termos de uso <a href="lorem.html" style="color: #142d4c;">BIKO+</a></label>
+                        </div>
+
+                        <div class="mb-3">
+                            <button id="btnSalvarAU" type="submit" class="btn btn-primary">Cadastrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Rodapé -->
     <div class="rodape">

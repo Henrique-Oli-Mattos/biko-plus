@@ -1,3 +1,4 @@
+/* Import das Fontes */
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Heebo:wght@100;400&display=swap');
 
@@ -86,6 +87,7 @@ button:hover {
     width: 130%;
 }
 
+/* CSS de Cards de serviços */
 #bikoDois h2 {
     font-size: 50px;
     font-family: 'Amatic SC', cursive;
@@ -115,6 +117,7 @@ button:hover {
     margin-bottom: 20px;
 }
 
+/* CSS da parte de resumo do sobre nós */
 #resumoSobreNos {
     background-color: #ececec;
 }
@@ -139,6 +142,7 @@ button:hover {
     margin-bottom: 40px;
 }
 
+/* CSS do Footer */
 .rodape {
     background-color: #ececec;
     margin: 2px;
@@ -149,4 +153,32 @@ button:hover {
 #link--contato {
     padding: 5px;
     font-weight: bold;
+}
+
+/* CSS do Modal */
+.modal-header {
+    background:#9fd3c7;
+    color:cornsilk;
+    font-family: 'Amatic SC', cursive;
+}
+
+.modal-header h5 {
+    margin-top: 12px;
+    font-size: 50px;
+}
+    
+#btnSalvar {
+    font-family: 'Amatic SC', cursive;
+    background: #41b53a;
+    font-size: 30px;
+    width: 40%;
+}
+
+.form-label {
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+}
+
+.mb-3 input {
+    font-family: 'Amatic SC', cursive;
 }
