@@ -3,6 +3,7 @@
 
 body {
     display: block;
+    box-sizing: border-box;
     overflow-x: hidden;
 }
 
@@ -68,6 +69,7 @@ button {
 button:hover {
     opacity: 1;
     transform: scale(1.0);
+    text-decoration: none 
 }
 
 #biko .col {
@@ -110,8 +112,8 @@ button:hover {
 }
 
 #bikoDois .icon {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     margin-bottom: 20px;
 }
 
@@ -149,4 +151,138 @@ button:hover {
 #link--contato {
     padding: 5px;
     font-weight: bold;
+}
+
+
+/*Serviços e produtos*/
+
+
+.container2{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+}
+
+#padding-0{
+    padding-top: 0;
+    padding-bottom: 3rem;
+}
+#padding-3{
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+@media (min-width: 641px){
+    .container2{
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+    }
+}
+
+@media (min-width: 992px){
+    .container2{
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+    }
+}
+
+@media (min-width: 1200px){
+    .container2{
+        padding-left: 3rem;
+        padding-right: 3rem;
+
+    }
+}
+
+.skills{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+}
+
+.skills > span{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.skills > h3{
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 4rem;
+}
+
+.skills > .skills-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (min-width: 641px){
+    .skills > .skills-container{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: row;   }
+}
+
+.skills > .skills-container .skill-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    margin-bottom: 3rem;
+}
+.skills > .skills-container .skill-badge{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+    background-color: #fff;
+    margin-bottom: 1rem;
+}
+.skills > .skills-container .skill-badge img{
+    max-width: 50px;
+}
+
+.skills > .skills-container .skill-item h4{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.botao{
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.none{
+    color: black;
+    text-decoration: none;
+}
+
+.botao .none{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    max-width: 80%;
+    border-radius: 50%;
+}
+.produtor{
+    margin-top: 10rem;
+    width: 120%;
 }
