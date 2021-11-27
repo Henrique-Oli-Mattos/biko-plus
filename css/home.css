@@ -8,6 +8,9 @@
     --lightGreen: #9fd3c7;
     --lightBlue: #385170;
     --heavyBlue: #142d4c;
+
+    /* Font da Aplicação */
+    --principalFont: 'Amatic SC', cursive;
 }
 
 body {
@@ -17,7 +20,7 @@ body {
 
 nav {
     background-color: var(--lightGrey);
-    font-family: 'Amatic SC', cursive;
+    font-family: var(--principalFont);
     color: #000;
 }
 
@@ -55,11 +58,11 @@ section h1 {
     text-align: left;
     margin-bottom: 20px;
     font-size: 60px;
-    font-family: 'Amatic SC', cursive;
+    font-family: var(--principalFont);
 }
 
 section p {
-    font-family: 'Amatic SC', cursive;
+    font-family: var(--principalFont);
     font-size: 30px;
     font-weight: 300;
 }
@@ -67,7 +70,7 @@ section p {
 button {
     max-width: 50%;
     border-radius: 50px !important;
-    font-family: 'Amatic SC', cursive;
+    font-family: var(--principalFont);
     color: var(--lightGrey);
     opacity: 0.9;
     transition: all ease 0.5s;
@@ -97,7 +100,7 @@ button:hover {
 /* CSS de Cards de serviços */
 #bikoDois h2 {
     font-size: 50px;
-    font-family: 'Amatic SC', cursive;
+    font-family: var(--principalFont);
     color: var(--heavyBlue);
     margin-bottom: 40px;
 }
@@ -109,7 +112,7 @@ button:hover {
 }
 
 #bikoDois .card-title {
-    font-family: 'Amatic SC', cursive;
+    font-family: var(--principalFont);
     font-size: 30px;
     color: var(--heavyBlue);
 }
@@ -131,14 +134,14 @@ button:hover {
 
 #resumoSobreNos h2 {
     font-size: 50px;
-    font-family: 'Amatic SC', cursive;
+    font-family: var(--principalFont);
     color: var(--heavyBlue);
     margin-top: 55px;
     margin-bottom: 40px;
 }
 
 #resumoSobreNos p {
-    font-family: 'Amatic SC', cursive;
+    font-family: var(--principalFont);
     color: #000;
     font-size: 30px;
     margin-bottom: 40px;
@@ -153,7 +156,7 @@ button:hover {
 .rodape {
     background-color: var(--lightGrey);
     margin: 2px;
-    font-family: 'Amatic SC', cursive;
+    font-family: var(--principalFont);
     font-size: 1.5rem;
 }
 
@@ -168,7 +171,7 @@ button:hover {
 .modal-header {
     background: var(--lightGreen);
     color:cornsilk;
-    font-family: 'Amatic SC', cursive;
+    font-family: var(--principalFont);
 }
 
 .modal-header h5 {
@@ -177,24 +180,24 @@ button:hover {
 }
     
 #btnSalvar {
-    font-family: 'Amatic SC', cursive;
+    font-family: var(--principalFont);
     background: #41b53a;
     font-size: 30px;
     width: 40%;
 }
 
 .form-label {
-    font-family: 'Amatic SC', cursive;
+    font-family: var(--principalFont);
     font-size: 20px;
 }
 
 .mb-3 input {
-    font-family: 'Amatic SC', cursive;
+    font-family: var(--principalFont);
 }
 
 /* Modal de Login */
 #frmUsuarioLogin .mb-3 button {
-    font-family: 'Amatic SC', cursive;
+    font-family: var(--principalFont);
     font-size: 30px;
     width: 150px;
     background-color: #41b53a;
@@ -202,32 +205,32 @@ button:hover {
 
 /* Modal de Cadastro de Autônomo */
 #addUsuarioAU .mb-3 button {
-    font-family: 'Amatic SC', cursive;
+    font-family: var(--principalFont);
     font-size: 30px;
     width: 150px;
     background-color: #41b53a;
 }
 
 option {
-    font-family: 'Amatic SC', cursive;
+    font-family: var(--principalFont);
 }
 
 /* Tela de Contato */
 #contatoEmail {
-    font-family: 'Amatic SC', cursive;
+    font-family: var(--principalFont);
     font-size: 30px;
     padding: 5px;
 }
 
 #contatoTelefone {
-    font-family: 'Amatic SC', cursive;
+    font-family: var(--principalFont);
     font-size: 30px;
     padding: 5px;
 }
 
 /* Tela de Serviços */
 .botao button {
-    font-family: 'Amatic SC', cursive;
+    font-family: var(--principalFont);
     width: 150px;
     background-color: #41b53a;
     text-decoration: none;
