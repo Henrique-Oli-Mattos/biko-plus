@@ -56,6 +56,24 @@ section p {
     font-weight: 300;
 }
 
+span{
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+h4{
+    font-family: 'Amatic SC', cursive;
+
+    font-weight: 300;
+}
+
+h3{
+    font-family: 'Amatic SC', cursive;
+
+    font-weight: 300;
+}
+
 button {
     max-width: 50%;
     border-radius: 50px !important;
@@ -176,7 +194,6 @@ button:hover {
     .container2{
         padding-left: 1rem;
         padding-right: 1rem;
-
     }
 }
 
@@ -184,7 +201,6 @@ button:hover {
     .container2{
         padding-left: 2rem;
         padding-right: 2rem;
-
     }
 }
 
@@ -192,7 +208,6 @@ button:hover {
     .container2{
         padding-left: 3rem;
         padding-right: 3rem;
-
     }
 }
 
@@ -283,6 +298,24 @@ button:hover {
     border-radius: 50%;
 }
 .produtor{
-    margin-top: 10rem;
-    width: 120%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 5rem;
+    height: 100vh;
+    width: 100vw;
+}
+
+.foto-produtor{
+    height: 350px;
+    width: 550px;
+    
+}
+
+.section2{
+
+   
 }

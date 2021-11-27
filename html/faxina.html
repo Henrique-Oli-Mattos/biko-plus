@@ -82,18 +82,59 @@
 
 
 
-    <div class="produtor">
-        <div>
-            <h1>Lorem ipsum lorem lorem</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ducimus iste rerum at similique velit. Molestiae rem maxime saepe</p>
-            
+    <section>
+        <div class="container produtor">
+            <div>
+                <h1>Faxina em casa</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  sit amet <br>consectetur adipisicing elit. Arc Architecto ducimus iste rerum at <br> similique velit. Molestiae rem maxime saepe Lorem ipsum dolor <br> Lorem ipsum dolor sit amet consectetur adipisicing elit.  sit amet <br>consectetur.</p>       
+                <span>
+                    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" width="45" height="30" alt="Ícone do Instagram"><a
+                        id="link--contato">@Faxinaemcasa</a></img>
+                </span>
+                <span>
+                    <img src="https://cdn-icons-png.flaticon.com/512/152/152740.png" width="45" height="30" alt="Ícone do Whatsapp"><a
+                        id="link--contato">(15)99846-1241</a></img>
+                </span>
+                <span>
+                    <img src="https://cdn-icons-png.flaticon.com/512/484/484167.png" width="45" height="30" alt="Ícone Local"><a
+                id="link--contato">Sorocaba-SP</a></img>
+                </span>
+            </div>
+            <div>
+                <img class="foto-produtor" src="https://www.maryhelp.com.br/img/layout/servico/faxineira.jpg" alt="imagem faxineira">
+            </div>
         </div>
+    </section>
 
+
+
+    <!-- Rodapé -->
+    <div class="rodape">
+        <footer class="text-center text-lg-start">
+            <!-- Copyright -->
+            <div class="text-center p-3">
+                © 2021 Copyright - Todos os Direitos Reservados
+                <p>Biko Ltda 2020-2021</p>
+                <img src="../assets/outlook-icon.png" width="40" height="35" alt="Ícone do Outlook"><a
+                    id="link--contato">bikoltda@outlook.com</a></img>
+            </div>
+            <!-- Copyright -->
+        </footer>
     </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 
+    <!-- Função para quando scrollar o fundo do header ficar escuro -->
+    <script>
+        var nav = document.querySelector('nav');
 
-
-
+        window.addEventListener('scroll', function () {
+            if (window.pageYOffset > 100) {
+                nav.classList.add('bg-dark', 'shadow');
+            } else {
+                nav.classList.remove('bg-dark', 'shadow');
+            }
+        });
+    </script>
 </body>
 
 </html>
