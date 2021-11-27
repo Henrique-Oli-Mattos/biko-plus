@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Icone do navegador -->
+    <link rel="icon" href="../assets/biko-mascote.png">
+
+    <!-- CSS import -->
+    <link rel="stylesheet" href="../../css/home.css">
+
+    <!-- Import de fonts do Google Fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Ephesis&family=Roboto+Mono:ital@1&display=swap');
+    </style>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Ephesis&family=Kaushan+Script&family=Roboto+Mono:ital@1&display=swap');
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Ephesis&family=Kaushan+Script&family=Mate+SC&family=Roboto+Mono:ital@1&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+
+    <!-- JavaScript and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+
+    <!-- Título da página -->
+    <title>Biko+ / Fotografo</title>
+</head>
+
+<body>
+    <!-- Navbar / Header -->
+    <nav class="py-3 navbar navbar-expand-lg fixed-top auto-hiding-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img class="logo" src="../../assets/biko-logo-fundo-transparente.png" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../home.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../produtos.html">Serviços & Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Fim da Navbar -->
+
+    <section>
+        <div class="container produtor">
+            <div>
+                <h1>Fotos da Lu</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  sit amet <br>consectetur adipisicing elit. Arc Architecto ducimus iste rerum at <br> similique velit. Molestiae rem maxime saepe Lorem ipsum dolor <br> Lorem ipsum dolor sit amet consectetur adipisicing elit.  sit amet <br>consectetur.</p>       
+                <span>
+                    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" width="45" height="30" alt="Ícone do Instagram"><a
+                        id="link--contato">@lufotos</a></img>
+                </span>
+                <span>
+                    <img src="https://cdn-icons-png.flaticon.com/512/152/152740.png" width="45" height="30" alt="Ícone do Whatsapp"><a
+                        id="link--contato">(15)99846-1241</a></img>
+                </span>
+                <span>
+                    <img src="https://cdn-icons-png.flaticon.com/512/484/484167.png" width="45" height="30" alt="Ícone Local"><a
+                id="link--contato">Sorocaba-SP</a></img>
+                </span>
+            </div>
+            <div>
+                <img class="foto-produtor" src="https://viagemeturismo.abril.com.br/wp-content/uploads/2020/05/gettyimages-1029839940.jpg" alt="imagem fotografo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <div class="rodape">
+        <footer class="text-center text-lg-start">
+            <!-- Copyright -->
+            <div class="text-center p-3">
+                © 2021 Copyright - Todos os Direitos Reservados
+                <p>Biko Ltda 2020-2021</p>
+                <img src="../../assets/outlook-icon.png" width="40" height="35" alt="Ícone do Outlook"><a
+                    id="link--contato">bikoltda@outlook.com</a></img>
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+
+    <!-- Função para quando scrollar o fundo do header ficar escuro -->
+    <script>
+        var nav = document.querySelector('nav');
+
+        window.addEventListener('scroll', function () {
+            if (window.pageYOffset > 100) {
+                nav.classList.add('bg-dark', 'shadow');
+            } else {
+                nav.classList.remove('bg-dark', 'shadow');
+            }
+        });
+    </script>
+</body>
+
+</html>
