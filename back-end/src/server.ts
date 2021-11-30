@@ -75,9 +75,10 @@ server.post("/sign-in", async (req, res) => {
   }
 });
 
-// server.get("/logout", (req, res) => {
-//   return res.send("Salve");
-// });
+server.get("/sign-out", async (req, res) => {
+  const { body } = req;
+  return res.send("Salve");
+});
 
 let port = 3333;
 server.listen(port, () => console.log(`server is listening at port ${port}`));
