@@ -15,15 +15,7 @@ const server = express();
 server.use(express.json());
 
 // Firebase
-const firebaseConfig = {
-  apiKey: "AIzaSyDFWmyAAedcFhsiUlzDTbJo6VZObkx8zd8",
-  authDomain: "biko-plus-project.firebaseapp.com",
-  projectId: "biko-plus-project",
-  storageBucket: "biko-plus-project.appspot.com",
-  messagingSenderId: "656188181604",
-  appId: "1:656188181604:web:b47339330b2cbd6178e371",
-  measurementId: "G-52C5LP1WSG",
-};
+const firebaseConfig = {};
 const app = initializeApp(firebaseConfig);
 
 //Emulator
