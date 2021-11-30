@@ -7,6 +7,7 @@ import {
   createUserWithEmailAndPassword,
   getAuth,
   connectAuthEmulator,
+  signInWithEmailAndPassword,
 } from "firebase/auth";
 
 // Express
@@ -30,11 +31,11 @@ const auth = getAuth(app); //<-----------------
 connectAuthEmulator(auth, "http://localhost:9099");
 
 //Routes
-server.post("/sign-up", async (request, response) => {
-  const { body } = request;
+server.post("/sign-up", async (req, res) => {
+  const { body } = req;
 
   if (!body.email || !body.password)
-    return response.status(400).json({
+    return res.status(400).json({
       error: "missing fields",
     });
 
@@ -44,17 +45,35 @@ server.post("/sign-up", async (request, response) => {
       body.email,
       body.password
     );
-    return response.status(200).json(user);
+    return res.status(200).json(user);
   } catch (error) {
-    return response.status(500).json({
-      error: "internal server error",
+    return res.status(500).json({
+      error: error.code,
     });
   }
 });
 
-// server.post("/sign-in", (req, res) => {
-//   return res.send("Salve");
-// });
+server.post("/sign-in", async (req, res) => {
+  const { body } = req;
+
+  if (!body.email || !body.password)
+    return res.status(400).json({
+      error: "missing fields",
+    });
+
+  try {
+    const user = await signInWithEmailAndPassword(
+      auth,
+      body.email,
+      body.password
+    );
+    return res.status(200).json(user);
+  } catch (error) {
+    return res.status(500).json({
+      error: error.code,
+    });
+  }
+});
 
 // server.get("/logout", (req, res) => {
 //   return res.send("Salve");
