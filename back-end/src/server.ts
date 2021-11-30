@@ -8,8 +8,17 @@ app.get("/test-get", (req, res) => {
   return res.send("Salve");
 });
 
-app.post("/test-post", (req, res) => {
+app.post("/signin", (req, res) => {
   return res.send("Salve");
 });
+
+app.get("/login", (req, res) => {
+  return res.send("Salve");
+});
+
+app.get("/logout", (req, res) => {
+  return res.send("Salve");
+});
+
 let port = 3000;
 app.listen(port, () => console.log(`server is listening at port ${port}`));
