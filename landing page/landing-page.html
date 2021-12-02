@@ -9,7 +9,7 @@
 
     <!-- Icone do navegador -->
     <link rel="icon" href="../assets/biko-mascote.png">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -22,7 +22,7 @@
 
         body {
             margin: 0px;
-            background: black;
+            background: url('../assets/assets-landing-page/test2.png');
         }
 
         #main {
@@ -88,7 +88,8 @@
             overflow: hidden;
         }
 
-        #text, #button {
+        #text,
+        #button {
             position: relative;
             left: -100%;
             animation: anim3 2s forwards 3s;
@@ -113,6 +114,17 @@
                 top: 0%;
             }
         }
+
+        button {
+            opacity: 0.9;
+            transition: all ease 0.5s;
+            transform: scale(0.9);
+        }
+
+        button:hover {
+            opacity: 1;
+            transform: scale(1.0);
+        }
     </style>
 </head>
 
@@ -122,12 +134,15 @@
 
         <div id="box2">
             <div id="text">
-                <p style="font-size: 300px;">BIKO+</p><br>
+                <p style="font-size: 300px; color: black;">BIKO+</p><br>
             </div>
         </div>
 
         <button id="button" onclick="location.href='../html/home.html'"
-            style="cursor: pointer; margin-left: 250px; margin-top: 700px; font-family: 'Amatic SC', cursive; width: 120px; font-size: 30px; padding: 10px; border-radius: 30px; background-color: red; color: white;">ACESSE</button>
+            style="cursor: pointer; margin-left: 250px; margin-top: 700px; font-family: 'Amatic SC', cursive; width: 120px; font-size: 30px; padding: 10px; border-radius: 30px; background-color: orange; color: white;">ACESSE</button>
+
+        <p style="margin-left: 80px; font-family: 'Amatic SC', cursive; font-size: 30px;">Faça parte do melhor
+            aplicativo de serviços de Sorocaba. <br><b style="color: green; margin-left: 155px; font-size: 50px;">Seja Biko!</b></p>
     </div>
 </body>
 
