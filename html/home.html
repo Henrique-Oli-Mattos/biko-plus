@@ -219,29 +219,29 @@
                 </div>
                 <div class="modal-body">
 
-                    <form id="frmUsuario" method="POST">
+                    <form id="frmUsuario">
                         <div class="mb-3">
                             <label for="nome" class="form-label">Nome completo</label>
-                            <input type="text" class="form-control" id="nome" name="nome" required>
+                            <input type="text" class="form-control" id="nomeCadastro" name="nome" required>
                         </div>
 
                         <div class="mb-3">
                             <label for="nome" class="form-label">Data de Nascimento</label>
-                            <input type="date" class="form-control" id="data" name="data" required>
+                            <input type="date" class="form-control" id="dataCadastro" name="data" required>
                         </div>
 
                         <div class="mb-3">
                             <label for="email" class="form-label">E-mail</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
+                            <input type="email" class="form-control" id="emailCadastro" name="email" required>
                         </div>
 
                         <div class="mb-3">
                             <label for="senha" class="form-label">Senha</label>
-                            <input type="password" class="form-control" id="senha" name="senha" required>
+                            <input type="password" class="form-control" id="senhaCadastro" name="senha" required>
                         </div>
 
                         <div class="mb-3">
-                            <input type="checkbox" id="termoUso" name="termoUso" required>
+                            <input type="checkbox" id="termoUsoCadastro" name="termoUsoCadastro" required>
                             <label for="check1" class="form-label">Concordo com os termos de uso <a href="#"
                                     style="color: #142d4c;">BIKO+</a></label>
                         </div>
@@ -375,6 +375,8 @@
             }
         });
     </script>
+
+    <script src="../js/index.js" type="module"></script>
 </body>
 
 </html>
