@@ -184,21 +184,19 @@
                 </div>
                 <div class="modal-body">
 
-                    <form id="frmUsuarioLogin" method="POST">
                         <div class="mb-3">
-                            <label for="nome" class="form-label">E-mail</label>
-                            <input type="email" class="form-control" id="nome" name="nome" required>
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="emailLogin" name="nome" required>
                         </div>
 
                         <div class="mb-3">
-                            <label for="nome" class="form-label">Senha</label>
-                            <input type="password" class="form-control" id="data" name="data" required>
+                            <label for="senha" class="form-label">Senha</label>
+                            <input type="password" class="form-control" id="senhaLogin" name="senha" required>
                         </div>
 
                         <div class="mb-3">
-                            <button id="btnLogin" type="submit" class="btn btn-primary">Entrar</button>
+                            <button id="buttonLogin" class="btn btn-primary">Entrar</button>
                         </div>
-                    </form>
                 </div>
             </div>
         </div>
@@ -219,7 +217,6 @@
                 </div>
                 <div class="modal-body">
 
-                    <form id="frmUsuario">
                         <div class="mb-3">
                             <label for="nome" class="form-label">Nome completo</label>
                             <input type="text" class="form-control" id="nomeCadastro" name="nome" required>
@@ -247,9 +244,8 @@
                         </div>
 
                         <div class="mb-3">
-                            <button id="btnSalvar" type="submit" class="btn btn-primary">Cadastrar</button>
+                            <button id="btnSalvar" class="btn btn-primary">Cadastrar</button>
                         </div>
-                    </form>
                 </div>
 
             </div>
@@ -271,30 +267,29 @@
                 </div>
                 <div class="modal-body">
 
-                    <form id="frmUsuarioAU" method="POST">
                         <div class="mb-3">
                             <label for="nome" class="form-label">Nome completo</label>
-                            <input type="text" class="form-control" id="nome" name="nome" required>
+                            <input type="text" class="form-control" id="nomeAU" name="nome" required>
                         </div>
 
                         <div class="mb-3">
                             <label for="nome" class="form-label">Data de Nascimento</label>
-                            <input type="date" class="form-control" id="data" name="data" required>
+                            <input type="date" class="form-control" id="dataAU" name="data" required>
                         </div>
 
                         <div class="mb-3">
                             <label for="email" class="form-label">E-mail</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
+                            <input type="email" class="form-control" id="emailAU" name="email" required>
                         </div>
 
                         <div class="mb-3">
                             <label for="senha" class="form-label">Senha</label>
-                            <input type="password" class="form-control" id="senha" name="senha" required>
+                            <input type="password" class="form-control" id="senhaAU" name="senha" required>
                         </div>
 
                         <div class="mb-3">
                             <label for="profissao" class="form-label">Profissão</label>
-                            <select type="text" class="form-control" id="profissao" name="profissao" required>
+                            <select type="text" class="form-control" id="profissaoAU" name="profissao" required>
                                 <option value="mecanico">Mecânico</option>
                                 <option value="faxina">Faxina</option>
                                 <option value="pintor">Pintor</option>
@@ -309,39 +304,38 @@
 
                         <div class="mb-3">
                             <label for="tempoexp" class="form-label">Tempo de Experiência</label>
-                            <input type="text" class="form-control" id="tempoexp" name="tempoexp" required>
+                            <input type="text" class="form-control" id="tempoexpAU" name="tempoexp" required>
                         </div>
 
                         <div class="mb-3">
                             <label for="telefone" class="form-label">Telefone</label>
-                            <input type="text" class="form-control" id="telefone" name="telefone" required>
+                            <input type="text" class="form-control" id="telefoneAU" name="telefone" required>
                         </div>
 
                         <div class="mb-3">
                             <label for="cpf" class="form-label">CPF</label>
-                            <input type="text" class="form-control" id="cpf" name="cpf" required>
+                            <input type="text" class="form-control" id="cpfAU" name="cpf" required>
                         </div>
 
                         <div class="mb-3">
                             <label for="curso" class="form-label">Curso Profissionalizante</label>
-                            <input type="text" class="form-control" id="curso" name="curso">
+                            <input type="text" class="form-control" id="cursoAU" name="curso">
                         </div>
 
                         <div class="mb-3">
                             <label for="instituição" class="form-label">Instituição</label>
-                            <input type="text" class="form-control" id="instituição" name="instituição">
+                            <input type="text" class="form-control" id="instituiçãoAU" name="instituição">
                         </div>
 
                         <div class="mb-3">
-                            <input type="checkbox" id="termoUso" name="termoUso" required>
+                            <input type="checkbox" id="termoUsoAU" name="termoUso" required>
                             <label for="check1" class="form-label">Concordo com os termos de uso <a href="lorem.html"
                                     style="color: #142d4c;">BIKO+</a></label>
                         </div>
 
                         <div class="mb-3">
-                            <button id="btnSalvarAU" type="submit" class="btn btn-primary">Cadastrar</button>
+                            <button id="btnSalvarAU"  class="btn btn-primary">Cadastrar</button>
                         </div>
-                    </form>
                 </div>
             </div>
         </div>
@@ -376,7 +370,9 @@
         });
     </script>
 
-    <script src="../js/index.js" type="module"></script>
+    <script src="../js/user.js" type="module"></script>
+    <script src="../js/worker.js" type="module"></script>
+    <script src="../js/login.js" type="module"></script>
 </body>
 
 </html>
