@@ -16,7 +16,7 @@ import {
 //     console.log("No User");
 //   }
 // });
-
+    
 // Initialize Firebase
 const firebaseConfig = {
   //enquanto n tiver enviroment vai ficar vazio no github
