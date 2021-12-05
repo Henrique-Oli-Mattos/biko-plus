@@ -16,18 +16,19 @@ import {
 //     console.log("No User");
 //   }
 // });
-alert("Login works");
+alert("Login HOSTING works");
 
 // Initialize Firebase
 const firebaseConfig = {
   //enquanto n tiver enviroment vai ficar vazio no github
 };
 const app = initializeApp(firebaseConfig);
-
+console.log(app);
 document.getElementById("buttonLogin").addEventListener("click", () => {
   login();
 });
 
+alert("hosting working");
 function login() {
   let email = document.getElementById("emailLogin").value;
   let senha = document.getElementById("senhaLogin").value;
