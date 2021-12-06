@@ -44,6 +44,8 @@
 </head>
 
 <body>
+    <script src="../js/verify.js" type="module"></script>
+
     <!-- Navbar / Header -->
     <nav class="py-3 navbar navbar-expand-lg fixed-top auto-hiding-navbar">
         <div class="container">
@@ -76,7 +78,16 @@
 
                 <button type="button" class="btn btn-primary rounded-pill"
                     style="width: 120px; background-color: transparent; color: #000; margin-left: 5px; font-size: 30px;"
-                    data-bs-toggle="modal" data-bs-target="#loginUser">Entrar</button>
+                    data-bs-toggle="modal" data-bs-target="#loginUser" id="botao--entrar" data-bs-toggle="modal">Entrar</button>
+
+
+
+
+                <p style="font-size: 30px; padding-right: 20px; margin-top: 10px; padding-left: 160px;" id="homeWelcome">Seja bem-vindo</p>
+
+                    <button type="button" class="btn btn-primary rounded-pill"
+                    style="width: 120px; background-color: rgb(196, 30, 30); color: rgb(255, 255, 255); margin-left: 5px; font-size: 30px;"
+                     id="botao--sair">Sair</button>
                 </form>
             </div>
         </div>
@@ -91,7 +102,6 @@
                     <h1>Seja Biko, Faça Parte!</h1>
                     <p>Oferecendo serviços de excelência e
                         empregando profissionais!</p>
-
                     <div class="d-inline-block">
                         <button type="button" class="btn btn-dark btn-lg"
                             style="color: #ececec; font-family: 'Amatic SC', cursive;" data-bs-toggle="modal"
@@ -203,7 +213,7 @@
     </div>
     <!-- Fim do Modal -->
 
-    <!--Modal de Cadastro-->
+    <!--Modal de Cadastro--> 
     <div class="modal fade" id="addUsuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -244,7 +254,7 @@
                         </div>
 
                         <div class="mb-3">
-                            <button id="btnSalvar" class="btn btn-primary">Cadastrar</button>
+                            <button id="btnSalvar" class="btn btn-primary" >Cadastrar</button>
                         </div>
                 </div>
 
@@ -370,9 +380,10 @@
         });
     </script>
 
+
     <script src="../js/user.js" type="module"></script>
     <script src="../js/worker.js" type="module"></script>
-    <script src="../js/login.js" type="module"></script>
+    <script src="../js/login-logout.js" type="module"></script>
 </body>
 
 </html>
